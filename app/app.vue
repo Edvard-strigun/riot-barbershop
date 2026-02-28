@@ -18,24 +18,32 @@
     htmlAttrs: {
       lang: locale.value,
     },
+    style: [
+      {
+        innerHTML: `:root { --bg-header-mobile: url('${ImageBgMobile}'); --bg-header-tablet: url('${ImageBgTablet}'); --bg-header-desktop: url('${ImageBgDesktop}'); }`,
+      },
+    ],
     link: [
       {
         rel: 'preload',
         as: 'image',
         href: ImageBgDesktop,
         fetchpriority: 'high',
+        media: '(min-width: 1024px)',
       },
       {
         rel: 'preload',
         as: 'image',
         href: ImageBgTablet,
         fetchpriority: 'high',
+        media: '(min-width: 640px) and (max-width: 1023px)',
       },
       {
         rel: 'preload',
         as: 'image',
         href: ImageBgMobile,
         fetchpriority: 'high',
+        media: '(max-width: 639px)',
       },
       {
         rel: 'canonical',

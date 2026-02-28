@@ -20,19 +20,19 @@ html {
 }
 
 .bg-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('~/assets/images/bg-header-mobile.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--bg-header-mobile);
   background-size: cover;
   background-position: center;
 }
 
 @media (min-width: 640px) {
   .bg-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('~/assets/images/bg-header-tablet.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--bg-header-tablet);
   }
 }
 
 @media (min-width: 1024px) {
   .bg-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('~/assets/images/bg-header-desktop.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--bg-header-desktop);
   }
 }
