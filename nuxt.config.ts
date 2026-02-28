@@ -33,10 +33,10 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Oswald: {
-        wght: [700],
+        normal: [700],
       },
       Montserrat: {
-        wght: [300, 400, 700],
+        normal: [300, 400, 700],
       },
     },
   },

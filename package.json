@@ -5,6 +5,7 @@
   "engines": {
     "node": ">=24.11.0"
   },
+  "author": "Yevhen Udovychenko",
   "scripts": {
     "dev": "nuxt dev"
   },
