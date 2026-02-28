@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Oswald', sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
+
+  --color-ink-black: hsl(216deg, 100%, 4%);
+  --color-oxford-navy: hsl(209deg, 100%, 20%);
+  --color-gold: hsl(50deg, 100%, 52%);
+  --color-platinum: hsl(340deg, 9%, 94%);
+}
+
+body {
+  color: var(--color-platinum);
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('~/assets/images/bg-header-mobile.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 640px) {
+  .bg-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('~/assets/images/bg-header-tablet.webp');
+  }
+}
+
+@media (min-width: 1024px) {
+  .bg-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('~/assets/images/bg-header-desktop.webp');
+  }
+}
