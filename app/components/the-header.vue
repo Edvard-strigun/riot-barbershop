@@ -24,12 +24,7 @@
       <p class="mb-8 text-center font-light">
         {{ $t('app.riot.description') }}
       </p>
-      <a
-        href="#"
-        class="ms_booking mx-auto mb-12 flex h-12 w-max cursor-pointer items-center justify-center bg-gold px-8 text-ink-black"
-      >
-        <span>{{ $t('header.action.book') }}</span>
-      </a>
+      <BtnBookNow>{{ $t('header.action.book') }}</BtnBookNow>
       <a
         href="https://www.google.com/maps/place/Akademika+Palladina+Ave,+59б,+Kyiv,+04128"
         target="_blank"

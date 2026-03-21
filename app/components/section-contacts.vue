@@ -78,12 +78,7 @@
         <p class="mx-auto mb-8 max-w-2xl text-platinum/60">
           {{ $t('contacts.card.description') }}
         </p>
-        <a
-          href="#"
-          class="ms_booking mx-auto mb-12 flex h-12 w-max cursor-pointer items-center justify-center bg-gold px-8 text-ink-black"
-        >
-          <span>{{ $t('contacts.cta.book') }}</span>
-        </a>
+        <BtnBookNow>{{ $t('contacts.cta.book') }}</BtnBookNow>
       </div>
     </div>
   </section>

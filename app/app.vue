@@ -9,7 +9,7 @@
     locale.value === 'uk' ? 'uk_UA' : 'en_US'
   );
 
-  const siteUrl = 'https://riotbarbershop.com.ua/';
+  const { siteUrl } = CONSTANTS;
 
   const pageTitle = computed(() => t('organization.name'));
   const pageDescription = computed(() => t('organization.description'));
