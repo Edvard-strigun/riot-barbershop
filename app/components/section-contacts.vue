@@ -78,12 +78,12 @@
         <p class="mx-auto mb-8 max-w-2xl text-platinum/60">
           {{ $t('contacts.card.description') }}
         </p>
-        <button
-          type="button"
-          class="mx-auto block h-12 cursor-pointer bg-gold px-8 text-ink-black"
+        <a
+          href="#"
+          class="ms_booking mx-auto mb-12 flex h-12 w-max cursor-pointer items-center justify-center bg-gold px-8 text-ink-black"
         >
-          {{ $t('contacts.cta.book') }}
-        </button>
+          <span>{{ $t('contacts.cta.book') }}</span>
+        </a>
       </div>
     </div>
   </section>

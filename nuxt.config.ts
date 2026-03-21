@@ -26,6 +26,14 @@ export default defineNuxtConfig({
         { name: 'format-detection', content: 'telephone=no' },
         { name: 'theme-color', content: '#ffffff' },
       ],
+      script: [
+        {
+          src: '//w1418839.alteg.io/widgetJS',
+          defer: true,
+          // @ts-expect-error - No types for this script
+          charset: 'UTF-8',
+        },
+      ],
     },
   },
   site: { url: 'https://riotbarbershop.com.ua' },
