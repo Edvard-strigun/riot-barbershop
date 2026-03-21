@@ -57,10 +57,6 @@
         media: '(max-width: 639px)',
       },
       {
-        rel: 'canonical',
-        href: siteUrl,
-      },
-      {
         rel: 'alternate',
         hreflang: 'en',
         href: `${siteUrl}en`,
