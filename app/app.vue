@@ -9,7 +9,7 @@
     locale.value === 'uk' ? 'uk_UA' : 'en_US'
   );
 
-  const siteUrl = 'https://edvard-strigun.github.io/riot-barbershop/';
+  const siteUrl = 'https://riotbarbershop.com.ua/';
 
   const pageTitle = computed(() => t('organization.name'));
   const pageDescription = computed(() => t('organization.description'));
