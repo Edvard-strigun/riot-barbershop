@@ -1,5 +1,5 @@
-import tailwindcss from '@tailwindcss/vite';
 import svgLoader from 'vite-svg-loader';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -28,7 +28,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  site: { url: 'https://Edvard-strigun.github.io' },
+  site: { url: 'https://riotbarbershop.com.ua' },
   robots: { robotsTxt: false },
   googleFonts: {
     families: {
@@ -46,10 +46,6 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   i18n: {
-    baseUrl:
-      process.env.NODE_ENV === 'development'
-        ? undefined
-        : 'https://Edvard-strigun.github.io/riot-barbershop/',
     defaultLocale: 'uk',
     strategy: 'prefix_except_default',
     langDir: 'locales',
