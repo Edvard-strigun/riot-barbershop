@@ -30,8 +30,6 @@ export default defineNuxtConfig({
         {
           src: '//w1418839.alteg.io/widgetJS',
           defer: true,
-          // @ts-expect-error - No types for this script
-          charset: 'UTF-8',
         },
       ],
     },
