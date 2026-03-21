@@ -1,9 +1,11 @@
 <script setup lang="ts">
   const { locale } = useI18n();
+  const route = useRoute();
 
-  const widgetUrl = computed(() =>
-    locale.value === 'uk' ? CONSTANTS.widgetUrlUk : CONSTANTS.widgetUrlEn
-  );
+  const widgetUrl = computed(() => {
+    const isEn = locale.value === 'en' || route.path.startsWith('/en');
+    return isEn ? CONSTANTS.widgetUrlEn : CONSTANTS.widgetUrlUk;
+  });
 </script>
 
 <template>
