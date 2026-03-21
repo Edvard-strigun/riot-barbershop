@@ -1,18 +1,34 @@
 <script setup lang="ts">
   const { locale } = useI18n();
-  const route = useRoute();
 
-  const widgetUrl = computed(() => {
-    const isEn = locale.value === 'en' || route.path.startsWith('/en');
-    return isEn ? CONSTANTS.widgetUrlEn : CONSTANTS.widgetUrlUk;
+  const anchor = useTemplateRef('anchor-el');
+
+  function getWidgetUrl() {
+    return locale.value === 'en'
+      ? CONSTANTS.widgetUrlEn
+      : CONSTANTS.widgetUrlUk;
+  }
+
+  // Set data-url on client after all i18n redirects have completed
+  onMounted(() => {
+    if (anchor.value) {
+      anchor.value.dataset.url = getWidgetUrl();
+    }
+  });
+
+  watch(locale, () => {
+    nextTick(() => {
+      if (anchor.value) {
+        anchor.value.dataset.url = getWidgetUrl();
+      }
+    });
   });
 </script>
 
 <template>
   <a
-    :key="locale"
+    ref="anchor-el"
     href="#"
-    :data-url="widgetUrl"
     class="ms_booking mx-auto mb-12 flex h-12 w-max cursor-pointer items-center justify-center bg-gold px-8 text-ink-black"
   >
     <span><slot /></span>

@@ -59,12 +59,12 @@
           class="relative -mx-4 h-125 overflow-hidden rounded-lg lg:mx-0 lg:grow"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43198.74247624879!2d27.89285!3d47.76333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb673a8a7b3b31%3A0x4b9c6b9c6b9c6b9c!2zQsSDbMibaSwg0JzQvtC70LTQvtCy0LA!5e0!3m2!1sru!2s!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20304.473038859505!2d30.376424099999998!3d50.49585725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdceb3339ad3%3A0x3b5f64f99515e686!2sRiot%20Barbershop!5e0!3m2!1suk!2sua!4v1774104778960!5m2!1suk!2sua"
             width="100%"
             height="100%"
             allowfullscreen
             loading="lazy"
-            referrerpolicy="no-referrer"
+            referrerpolicy="no-referrer-when-downgrade"
             :title="$t('contacts.iframe.map.title')"
             class="border-0"
           ></iframe>

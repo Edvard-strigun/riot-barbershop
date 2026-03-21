@@ -26,7 +26,7 @@
       </p>
       <BtnBookNow>{{ $t('header.action.book') }}</BtnBookNow>
       <a
-        href="https://www.google.com/maps/place/Akademika+Palladina+Ave,+59б,+Kyiv,+04128"
+        href="https://maps.app.goo.gl/2nKV54zg6epBHkhS6"
         target="_blank"
         rel="noopener noreferrer"
         class="text-platinum/60 hover:underline hover:underline-offset-4"
