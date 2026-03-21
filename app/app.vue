@@ -5,6 +5,17 @@
 
   const { locale, t } = useI18n();
 
+  // Re-initialize altegio widget buttons after locale change
+  // The widget script scans for .ms_booking elements once on load,
+  // but Nuxt re-creates DOM elements on navigation, losing click handlers
+  watch(locale, () => {
+    nextTick(() => {
+      setTimeout(() => {
+        window.yWidget?.setButtons();
+      }, 500);
+    });
+  });
+
   const localeFormatted = computed(() =>
     locale.value === 'uk' ? 'uk_UA' : 'en_US'
   );
