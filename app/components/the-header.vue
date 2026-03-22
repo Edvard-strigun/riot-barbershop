@@ -18,7 +18,7 @@
       <h1
         class="mb-8 flex flex-col gap-2 text-center font-heading text-5xl font-bold"
       >
-        <span class="p-name text-gold">{{ $t('app.riot') }}</span>
+        <span class="p-name">{{ $t('app.riot') }}</span>
         <span>{{ $t('app.barbershop') }}</span>
       </h1>
       <p class="mb-8 text-center font-light">
